@@ -1,0 +1,4 @@
+airflow/logs
+airflow/airflow-webserver.pid
+.env
+.idea
