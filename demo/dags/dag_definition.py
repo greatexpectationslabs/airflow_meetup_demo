@@ -63,7 +63,7 @@ args = {
 }
 
 dag = DAG(
-    dag_id="my_dag",
+    dag_id="GE_Airflow_Demo",
     default_args=args,
     schedule_interval=None,
 )

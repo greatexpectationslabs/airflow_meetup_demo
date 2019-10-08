@@ -1,4 +1,5 @@
 apache-airflow==1.10.5
 cryptography==2.7
 psycopg2==2.8.3
-great_expectations==0.7.10
+great_expectations>=0.8.0a3
+pandas>=0.24
