@@ -1,0 +1,46 @@
+{
+  "data_asset_name": "demo__dir/default/npidata_pfile",
+  "expectation_suite_name": "warning",
+  "meta": {
+    "great_expectations.__version__": "0.8.0a3+15.g8cd46e9c"
+  },
+  "expectations": [
+    {
+      "expectation_type": "expect_column_to_exist",
+      "kwargs": {
+        "column": "Provider Other Organization Name Type Code"
+      }
+    },
+    {
+      "expectation_type": "expect_column_distinct_values_to_be_in_set",
+      "kwargs": {
+        "column": "Provider Other Organization Name Type Code",
+        "value_set": [
+          3.0,
+          4.0,
+          5.0
+        ]
+      }
+    },
+    {
+      "expectation_type": "expect_column_kl_divergence_to_be_less_than",
+      "kwargs": {
+        "column": "Provider Other Organization Name Type Code",
+        "partition_object": {
+          "values": [
+            3.0,
+            4.0,
+            5.0
+          ],
+          "weights": [
+            0.00020193861066235866,
+            0.00010096930533117933,
+            0.9996970920840065
+          ]
+        },
+        "threshold": 0.2
+      }
+    }
+  ],
+  "data_asset_type": "Dataset"
+}

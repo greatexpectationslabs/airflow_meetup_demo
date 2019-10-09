@@ -6,9 +6,11 @@ This demo builds from the apache airflow quick start (https://airflow.apache.org
 
 Set `AIRFLOW_HOME` to point to the `airflow/` directory in this repository.
 
+Setup:
 
 ```
-# airflow initdb
+docker-compose up -d
+airflow initdb  # Only necessary on first run, of course
 airflow webserver -p 8080
 airflow scheduler
 
